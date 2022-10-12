@@ -1,0 +1,116 @@
+<!-- Mina Lam
+     Products Page -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Products Page</title>
+        <script src="https://kit.fontawesome.com/35877ec0f2.js" crossorigin="anonymous"></script>
+        <link type="text/css" rel="stylesheet" href="../css/index.css">
+        <link type="text/css" rel="preconnect" href="https://fonts.googleapis.com">
+        <link type="text/css" rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link type="text/css" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+       <!-- Bootstrap -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <meta charset="UTF-8">
+    </head>
+
+    <body class="font">
+        <header class="header">
+            <div class="menu">
+                <nav class="nav">
+                    
+                    <button class="nav-close" onclick="toggleNav()">
+                        <i class="fa-solid fa-x icon nav-close"></i>
+                    </button>
+
+                    <div class="nav-links medium-color-font">
+                        <div>
+                            <a href="../index.html" class="nav-link">Home</a>
+                        </div>
+                        <div>
+                            <a href="products.html" class="nav-link">Products</a>
+                        </div>
+                        <div>
+                            <a href="contact.html" class="nav-link">About Us</a>
+                        </div>
+                        <div>
+                            <a href="contact.html#contact" class="nav-link">Contact Us</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <button class="nav-open icon-button" onclick="toggleNav()">
+                    <i class="fa-solid fa-bars icon"></i>
+                </button>
+
+                <script>
+                    function toggleNav() {
+                        document.body.classList.toggle("nav-open");
+                    }
+                </script>
+
+            </div>
+            <div class="header-center text-center">
+                <a href="../index.html"> <img src="../img/logo.png" alt="candlescent" class="logo"></a>
+            </div>
+            <div class="basket">
+                <button class="icon-button icon">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+            </div>
+        </header>
+
+
+        <!-- Products based off of size and the custom one-->
+        <div class="products text-center">
+            <ul>
+                <li>
+                    <div class="product">
+                        <img src="../img/product.jpeg" class="product-image" alt="candle">
+                        <h3>16 oz Soy Candle</h3>
+                        <small>3.75in x 3.5in</small><br>
+                        <small><u>$23.00</u></small>
+                    </div>
+                    <button onclick="location.href='html/products.html';" class="button small" type="button">CREATE MY CANDLE</button>
+                </li>
+
+                <li>
+                    <div class="product">
+                        <img src="../img/product.jpeg" class="product-image" alt="candle">
+                        <h3>9 oz Soy Candle</h3>
+                        <small>2.75in x 3.5in</small><br>
+                        <small><u>$19.00</u></small>
+                    </div>
+                    <button onclick="location.href='html/products.html';" class="button small" type="button">CREATE MY CANDLE</button>
+                </li>
+
+                <li>
+                    <div class="product">
+                        <img src="../img/product.jpeg" class="product-image" alt="candle">
+                        <h3>4 oz Soy Candle</h3>
+                        <small>2.25in x 2.75in</small><br>
+                        <small><u>$15.00</u></small>
+                    </div>
+                    <button onclick="location.href='html/products.html';" class="button small" type="button">CREATE MY CANDLE</button>
+                </li>
+            </ul>
+        </div>
+        <!-- for customers to reference sizes -->
+        <div class="bottom-img-sizes text-center page-border">
+            <h2 class="subtitle spacing">Candle Sizes</h2>
+            <img src="../img/candle-sizes.png" class="sizes spin" alt="candle sizes">
+        </div>
+        <footer class="footer spacing text-center">
+            <nav class="footer-link">
+                <div  class="small-spacing">
+                    <i class="fa-brands fa-twitter-square inline icon"></i>
+                    <i class="fa-brands fa-instagram-square inline icon"></i>
+                    <i class="fa-brands fa-facebook-square inline icon"></i>
+                </div>
+
+                <a href="contact.html" class="footer-link">Contact Us</a>
+            </nav>
+            <h6>Copyright © 2022 Candlescent | Site made by <i>Mina Lam</i></h6>
+        </footer>
+    </body>
+</html>

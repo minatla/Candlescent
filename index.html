@@ -1,0 +1,237 @@
+<!-- Mina Lam 
+     Home Page -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <script src="https://kit.fontawesome.com/35877ec0f2.js" crossorigin="anonymous"></script>
+        <link type="text/css" rel="stylesheet" href="css/index.css">
+        <link type="text/css" rel="preconnect" href="https://fonts.googleapis.com">
+        <link type="text/css" rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link type="text/css" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script type="text/javascript" src="javascript/validate.js"></script>
+        <meta charset="UTF-8">
+    </head>
+    <body class="font">
+        <!-- top nav bar -->
+        <header class="header">
+            <div class="menu">
+                <nav class="nav">
+
+                    <button class="nav-close" onclick="toggleNav()">
+                        <i class="fa-solid fa-x icon nav-close"></i>
+                    </button>
+                    <div class="nav-links medium-color-font">
+                        <div>
+                            <a href="index.html" class="nav-link">Home</a>
+                        </div>
+                        <div>
+                            <a href="html/products.html" class="nav-link">Products</a>
+                        </div>
+                        <div>
+                            <a href="html/contact.html" class="nav-link">About Us</a>
+                        </div>
+                        <div>
+                            <a href="html/contact.html#contact" class="nav-link">Contact Us</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <button class="nav-open icon-button" onclick="toggleNav()">
+                    <i class="fa-solid fa-bars icon"></i>
+                </button>
+
+                <script>
+                    function toggleNav() {
+                        document.body.classList.toggle("nav-open");
+                    }
+                </script>
+            </div>
+            <div class="text-center">
+                <a href="/index.html"> <img src="/img/logo.png" alt="candlescent" class="logo"></a>
+            </div>
+            <div class="basket">
+                <button class="icon-button icon">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- introduction to candlescent -->
+        <div class="spacing page-border">
+
+            <h1 class="subtitle text-center">CREATE YOUR PERFECT SCENT</h1>
+
+            <div class="opening">
+                <img src="img/prettyproduct.jpeg" class="image">
+                <h3 class="inline description-font">Candlescent is known for our at-home custom candle-making experience that allows you to create your own candle from your choice of over 20 different fragrance oils.</h3>
+            </div>
+        </div>
+
+        <div class="button-center text-center">
+            <button onclick="location.href='html/products.html';" class="button">DISCOVER OUR FRAGRANCES</button>
+        </div>
+
+
+        <div class="spacing medium-color-font page-border">
+            <blockquote class="text-center"cite="https://www.goodreads.com/quotes/1299695-nothing-brings-to-life-again-a-forgotten-memory-like-a">
+            “Nothing brings to life again a forgotten memory like a fragrance.”<br>
+            <cite>-Christopher Poindexter</cite>
+            </blockquote>
+        </div>
+
+        <div class="text-center">
+            <i class="fa-solid fa-fire transition spacing"></i>
+        </div>
+
+        <!-- lets customer know how to do the custom candle -->
+        <div class="intructions description-font text-center page-border">
+            <dl class="">
+                <dt>1. Choose your scent</dt>
+                <div>Choose 3 fragrences from over 20 different options. Our fragrances range from earthy & masculine to floral & fresh. Don't know which scents to choose from? Purchase a sample kit and select your favorite scents.</div>
+                <dt>2. Select your vessel</dt>
+                <div>We have three sizes available for candles. The number of wicks will vary with the size.</div>
+                <dt>3. Enjoy your candle</dt>
+                <div>After customizing your candle, our team of candle specialists will create your custom product. Once it is ready, we will send it out to you to enjoy!</div>
+            </dl>
+        </div>
+
+        <div class="spacing text-center">
+            <button onclick="location.href='html/products.html';" class="button" type="button">CREATE MY CANDLE</button>
+        </div>
+
+        <div class="text-center page-border description-font">
+            <h3>Sign up for our Newsletter!</h3>
+            <!-- form -->
+            <table cellspacing="2" cellpadding="2" class="table">
+                <tbody>
+                    <div>
+                        <form id="myForm" action="" method="GET">
+                            <tr>
+                                <td>First name:</td> 
+                                <td> <input type="text" name="fname" id="fname"></td>
+                            </tr>
+                            <tr>
+                                <td>Last name:</td> 
+                                <td> <input type="text" name="lname" id="lname"></td>
+                            </tr>
+                            <tr>
+                                <td>Address:</td> 
+                                <td> <input type="text" name="address" id="address"></td>
+                            </tr>
+                            <tr>
+                                <td>City:</td> 
+                                <td> <input type="text" name="city" id="city"><br></td>
+                            </tr>
+                            <tr>
+                                <td>State:</td> 
+                                <td> <select name="State" name="state" id="state" >
+                                    <option value="default" selected>Choose your State</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District Of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Zip code:</td> 
+                                <td><input type="number" name="zip" id="zip"></td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td> 
+                                <td><input type="number" name="phone" id="phone"></td>
+                            </tr>
+                            <tr class="small-font">
+                                <td>
+                                    <input type="radio" id="personal" name="phone_num_type" value="personal" checked>
+                                    <label for="personal">Personal</label><br>
+                                </td>
+                                <td>
+                                    <input type="radio" id="business" name="phone_num_type" value="business">
+                                    <label for="business">Business</label><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td> 
+                                <td><input type="text" name="email" id="email"></td>
+                            </tr>
+                            <tr>
+                                <td align="right"></td>
+                                <td><input type="submit" value="Submit"></td>
+                            </tr>
+                        </form>
+                    </div>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-center">
+            <i class="fa-solid fa-fire transition spacing"></i>
+        </div>
+        <div class="spacing text-center">
+            <video src="video/science.mp4" width="800" controls></video>
+        </div>
+
+        <footer class="footer spacing text-center">
+            <nav class="footer-link">
+                <div  class="small-spacing">
+                    <i class="fa-brands fa-twitter-square inline icon"></i>
+                    <i class="fa-brands fa-instagram-square inline icon"></i>
+                    <i class="fa-brands fa-facebook-square inline icon"></i>
+                </div>
+
+                <a href="html/contact.html" class="footer-link">Contact Us</a>
+            </nav>
+            <h6>Copyright © 2022 Candlescent | Site made by <i>Mina Lam</i></h6>
+        </footer>
+    </body>
+</html>
